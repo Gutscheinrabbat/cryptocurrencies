@@ -1,191 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore the unique world of $BTCAT, the first blockchain cat, and the history of cryptocurrencies.">
-  <title>Cryptocurrencies and $BTCAT</title>
-  <style>
-    /* Base styles */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Roboto', sans-serif;
-      background-color: #1e1e2f;
-      color: #e4e4e7;
-      line-height: 1.8;
-    }
-
-    /* Header styles */
-    header {
-      text-align: center;
-      padding: 2rem 1rem;
-      background: linear-gradient(90deg, #0078d4, #6a5acd);
-      color: #fff;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-
-    header p {
-      font-size: 1rem;
-    }
-
-    /* Navigation bar */
-    nav {
-      position: sticky;
-      top: 0;
-      background-color: #2b2b3b;
-      display: flex;
-      justify-content: center;
-      padding: 0.5rem 0;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-      z-index: 1000;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #fff;
-      margin: 0 1rem;
-      padding: 0.5rem 1rem;
-      font-weight: bold;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-    }
-
-    nav a:hover {
-      background-color: #0078d4;
-    }
-
-    /* Section styles */
-    section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    section h2 {
-      color: #6a5acd;
-      margin-bottom: 1rem;
-    }
-
-    section p {
-      margin-bottom: 1rem;
-    }
-
-    /* Call to action */
-    .cta {
-      background-color: #2b2b3b;
-      color: #ffd700;
-      padding: 1rem;
-      text-align: center;
-      margin-top: 2rem;
-      border: 2px dashed #ffd700;
-      border-radius: 10px;
-    }
-
-    .cta strong {
-      display: block;
-      margin-bottom: 1rem;
-      font-size: 1rem;
-    }
-
-    @media (max-width: 768px) {
-      .cta strong {
-        font-size: 0.5rem; /* تصغير العنوان على الأجهزة الصغيرة */
-      }
-    }
-
-    /* Footer styles */
-    footer {
-      text-align: center;
-      padding: 1rem 0;
-      background-color: #2b2b3b;
-      color: #e4e4e7;
-      margin-top: 2rem;
-    }
-
-    /* ASCII art colors */
-    .ascii {
-      font-family: 'Courier New', monospace;
-      color: #00ff7f;
-      background-color: #000;
-      padding: 1rem;
-      border-radius: 10px;
-      margin: 1rem 0;
-      text-align: center;
-      overflow-x: auto;
-      white-space: pre;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about cryptocurrency, meme coins, and the unique history of $BTCAT - the first blockchain cat coin.">
+    <meta name="keywords" content="cryptocurrency, meme coins, BTCAT, blockchain, Solana, blockchain history">
+    <meta name="author" content="Your Name">
+    <title>Cryptocurrency and $BTCAT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: #1a1a2e;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+        header nav a:hover {
+            color: #f9ca24;
+        }
+        header nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        #ascii-art {
+            text-align: center;
+            font-family: monospace;
+            color: #f0932b;
+        }
+        #ascii-art p {
+            margin: 0;
+        }
+        .ca-address {
+            word-wrap: break-word;
+            font-size: 12px;
+            color: #555;
+            background: #f1f1f1;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .ca-address-mobile {
+            font-size: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1a1a2e;
+            color: white;
+        }
+        @media screen and (max-width: 600px) {
+            .ca-address {
+                font-size: 10px;
+            }
+        }
+    </style>
 </head>
-
 <body>
-  <header>
-    <h1>Cryptocurrencies and $BTCAT</h1>
-    <p>Explore the world of digital currencies and the legacy of the first blockchain cat.</p>
-  </header>
+    <header>
+        <h1>Cryptocurrency and $BTCAT</h1>
+        <nav>
+            <a href="#intro" style="scroll-behavior: smooth;">Introduction</a>
+            <a href="#meme-coins" style="scroll-behavior: smooth;">Meme Coins</a>
+            <a href="#btcat" style="scroll-behavior: smooth;">About $BTCAT</a>
+            <a href="#buy" style="scroll-behavior: smooth;">Buy $BTCAT</a>
+        </nav>
+    </header>
 
-  <nav>
-    <a href="#intro">Introduction</a>
-    <a href="#meme-coins">Meme Coins</a>
-    <a href="#btcat">About $BTCAT</a>
-    <a href="#footer">Contact</a>
-  </nav>
+    <section id="intro">
+        <h2>Introduction to Cryptocurrency</h2>
+        <p>Cryptocurrency is a revolutionary form of digital currency built on blockchain technology. Unlike traditional currencies, cryptocurrencies are decentralized, secure, and often represent innovative solutions in finance and technology.</p>
+        <p>The rise of meme coins in particular has reshaped how people engage with crypto, offering a blend of humor, creativity, and financial potential.</p>
+    </section>
 
-  <section id="intro">
-    <h2>Introduction</h2>
-    <p>
-      Cryptocurrencies have disrupted traditional finance, offering decentralized and transparent solutions. Blockchain technology enables secure and immutable transactions, fostering innovation in digital assets.
-    </p>
-    <p>
-      This page dives into the world of digital currencies, focusing on the historical and cultural significance of $BTCAT.
-    </p>
-  </section>
+    <section id="meme-coins">
+        <h2>What Are Meme Coins?</h2>
+        <p>Meme coins are a fascinating subset of the cryptocurrency world. Unlike traditional digital currencies such as Bitcoin and Ethereum, which are designed for specific use cases like payments or smart contracts, meme coins thrive on internet culture, community engagement, and their ability to go viral. They are often lighthearted, featuring playful names or symbols, but their impact on the market can be profound.</p>
+        <p>The appeal of meme coins lies in their accessibility and their ability to build a sense of belonging among their holders. Communities rally behind their favorite coins, creating online trends and memes that fuel growth. Coins like Dogecoin and Shiba Inu have shown how powerful community-driven projects can become, even outperforming well-established cryptocurrencies in certain periods.</p>
+    </section>
 
-  <section id="meme-coins">
-    <h2>The Role of Meme Coins</h2>
-    <p>
-      Meme coins have captured the imagination of online communities. With humorous and relatable origins, they bridge the gap between technology and culture. Examples like Dogecoin have paved the way for innovative projects.
-    </p>
-  </section>
+    <section id="btcat">
+        <h2>About $BTCAT</h2>
+        <div id="ascii-art">
+            <p>         /\_/\\</p>
+            <p>   ____/  o o  \\</p>
+            <p> /~____  =*= /=)</p>
+        </div>
+        <p>$BTCAT is not just another meme coin. It’s inspired by the first-ever blockchain-based ASCII art cat recorded on Bitcoin Block 322,917 in 2014. This historical connection gives it a unique authenticity and a story unlike any other meme coin.</p>
+        <p>The developer of $BTCAT followed Satoshi Nakamoto’s legendary example by burning 4.4% of the total supply and leaving the community in charge. This act of decentralization has created a strong community that views $BTCAT as a blend of art, history, and technology.</p>
+    </section>
 
-  <section id="btcat">
-    <h2>About $BTCAT</h2>
-    <p>
-      $BTCAT is the first blockchain cat, immortalized as ASCII art on the Bitcoin blockchain in Block 322,917 on September 28, 2014. It represents a unique combination of art, technology, and history.
-    </p>
-    <div class="ascii">
-      
-         /\_/\
-   ____/  o o  \
- /~____  m)
-      
-    </div>
-    <p>
-      More than a meme coin, $BTCAT stands as a cultural icon in the cryptocurrency world. It embodies:
-    </p>
-    <ul>
-      <li>Artistic expression on the blockchain.</li>
-      <li>Historical relevance as the first blockchain cat.</li>
-      <li>Innovative community-driven ethos.</li>
-    </ul>
-    <div class="cta">
-      <strong>3XFiHA2gexzBjqtM5Z7FjJhP6f28D2m79UihBCfkpump</strong>
-      Ensure accuracy when using this address to purchase $BTCAT.
-    </div>
-  </section>
+    <section id="buy">
+        <h2>Buy $BTCAT</h2>
+        <p>To purchase $BTCAT, use the contract address below:</p>
+        <p class="ca-address ca-address-mobile">3XFiHA2gexzBjqtM5Z7FjJhP6f28D2m79UihBCfkpump</p>
+        <p>Alternatively, visit the <a href="https://dexscreener.com/solana/6xSa4uFj2GaF8QMNaK6viRV1DsPXJBmNZgCedgjkUNjd" target="_blank">Dexscreener page</a> for trading information and charts.</p>
+    </section>
 
-  <footer id="footer">
-    <p>&copy; 2024 Cryptocurrencies and $BTCAT | Designed for enthusiasts</p>
-  </footer>
+    <footer>
+        <p>&copy; 2024 Your Website | All Rights Reserved</p>
+    </footer>
 </body>
-
 </html>
