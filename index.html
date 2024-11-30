@@ -108,33 +108,38 @@
             color: #ff8c00;
         }
         /* Style for the up button */
+
+        /* Style for the "Back to Top" button */
 .up-button {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #00aaff;  /* Adjust to a color matching your website theme */
-    color: white;
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
+    background-color: #272c34; /* Matches site's background */
+    color: #f4c10f; /* Matches site's yellow accents */
     padding: 10px;
-    border-radius: 50%;
-    font-size: 24px;
+    border-radius: 50%; /* Circular shape */
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
     transition: background-color 0.3s ease, transform 0.3s ease;
-    z-index: 1000;
+    z-index: 1000; /* Ensures it stays on top */
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; /* Pointer cursor for better UX */
 }
 
 .up-button:hover {
-    background-color: #0088cc; /* Darker shade on hover */
-    transform: scale(1.1); /* Slightly enlarge the button on hover */
-}
-
-.up-button i {
-    font-size: 1.5em;
+    background-color: #f4c10f; /* Yellow highlight on hover */
+    color: #272c34; /* Changes icon color to match the site's theme */
+    transform: scale(1.1); /* Slight zoom effect on hover */
 }
 
 .up-button:focus {
-    outline: none;
+    outline: none; /* Removes focus outline */
 }
+
 
 
         @media screen and (max-width: 600px) {
@@ -272,8 +277,11 @@
     <footer>
         <p>&copy; 2024 BTCAT Holder | All Rights Reserved</p>
         <a href="#top" class="up-button" title="Back to top">
-    <i class="fa fa-arrow-up">⬆</i>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+        <path d="M12 2l-10 10h6v10h8v-10h6z"/>
+    </svg>
 </a>
+
 
     </footer>
 </body>
