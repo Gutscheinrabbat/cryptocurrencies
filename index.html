@@ -107,6 +107,35 @@
         a:hover {
             color: #ff8c00;
         }
+        /* Style for the up button */
+.up-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #00aaff;  /* Adjust to a color matching your website theme */
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 24px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+}
+
+.up-button:hover {
+    background-color: #0088cc; /* Darker shade on hover */
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+}
+
+.up-button i {
+    font-size: 1.5em;
+}
+
+.up-button:focus {
+    outline: none;
+}
+
 
         @media screen and (max-width: 600px) {
             /* Responsive design adjustments for mobile */
@@ -242,6 +271,10 @@
 
     <footer>
         <p>&copy; 2024 BTCAT Holder | All Rights Reserved</p>
+        <a href="#top" class="up-button" title="Back to top">
+    <i class="fa fa-arrow-up"></i>
+</a>
+
     </footer>
 </body>
 </html>
