@@ -1,0 +1,146 @@
+        html{
+            scroll-behavior: smooth;
+        } 
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #fff;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        /* Header Section */
+        header {
+            background: #1a1a2e;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+            top: 0;
+            z-index: 1000;
+            
+        }
+
+        /* Navigation */
+        header nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            overflow-x: auto;
+            margin-top: 10px;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover {
+            color: #1dd1a1; /* Greenish blue color */
+        }
+
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #1f1f2e;
+            border-radius: 10px;
+        }
+
+        #ascii-art {
+            text-align: center;
+            font-family: monospace;
+            color: #1dd1a1; /* Greenish blue for better contrast */
+            white-space: pre-wrap; /* Allowing ASCII to show correctly */
+        }
+
+        #ascii-art p {
+            margin: 0;
+        }
+
+        .ca-address {
+            word-wrap: break-word;
+            font-size: 12px;
+            color: #555;
+            background: #f1f1f1;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+        }
+
+        .ca-address-mobile {
+            font-size: 7px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1a1a2e;
+            color: white;
+        }
+
+        h1, h2, h3 {
+            color: #1dd1a1; /* Greenish blue */
+        }
+
+        a {
+            color: #1dd1a1; /* Greenish blue */
+        }
+
+        a:hover {
+            color: #ff8c00;
+        }
+        
+
+        /* Style for the "Back to Top" button */
+.up-button {
+    position: fixed;
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
+    background-color: #272c34; /* Matches site's background */
+    color: #f4c10f; /* Matches site's yellow accents */
+    padding: 10px;
+    border-radius: 50%; /* Circular shape */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 1000; /* Ensures it stays on top */
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; /* Pointer cursor for better UX */
+}
+
+.up-button:hover {
+    background-color: #f4c10f; /* Yellow highlight on hover */
+    color: #272c34; /* Changes icon color to match the site's theme */
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.up-button:focus {
+    outline: none; /* Removes focus outline */
+}
+
+
+
+        @media screen and (max-width: 600px) {
+            /* Responsive design adjustments for mobile */
+            body {
+                overflow-x: hidden; /* Prevent horizontal scrolling */
+            }
+            .ca-address {
+                font-size: 10px;
+            }
+            header nav {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    
